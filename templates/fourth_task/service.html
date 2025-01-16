@@ -1,3 +1,4 @@
+<!--наследовние от menu.html-->
 {% extends "fourth_task/menu.html" %}
 
 {% block pagename %}
@@ -5,9 +6,11 @@
 {% endblock %}
 
 {% block menu %}
+<!--блок menu наследуемый из родительского шаблона menu.html-->
     {{ block.super }}
 {% endblock %}
 
 {% block content %}
+<!--блок content наследуемый из родительского шаблона menu.html-->
     {{ block.super }}
 {% endblock %}
