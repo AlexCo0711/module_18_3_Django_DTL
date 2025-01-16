@@ -1,0 +1,29 @@
+<!--в этом файле прописываем всю структуры и вид страницы-->
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Сервисный центр</title>
+</head>
+<body>
+
+<!--блок заголовков страниц-->
+    {% block pagename %}
+    <h1>Главная страница</h1>
+    {% endblock %}
+
+<!--блок меню-->
+    {% block menu %}
+        <ul>
+<!--список страниц-->
+            <p></p><a href="/service"><h2>Сервисный центр</h2></a></p>
+            <p><a href="/in_work"><h3>Принято в сервис</h3></a></p>
+            <p><a href="/ready"><h3>Готово к выдаче</h3></a></p>
+        </ul>
+    {% endblock %}
+
+<!--    блок контента-->
+    {% block content %}
+    {% endblock %}
+</body>
+</html>

@@ -1,0 +1,18 @@
+{% extends "fourth_task/menu.html" %}
+
+{% block pagename %}
+  <h1>ОБОРУДОВАНИЕ</h1>
+{% endblock %}
+
+{% block menu %}
+  {{ block.super }}
+{% endblock %}
+
+{% block content %}
+  <ul>
+    {% for devi in devices %}
+        <li><h2>{{ devi }}  <button>Модели</button></h2></li>
+    {% endfor %}
+    <a href='/service'><button>Вернуться обратно</button></a>
+  </ul>
+{% endblock %}

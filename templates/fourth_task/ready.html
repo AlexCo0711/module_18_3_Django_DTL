@@ -1,0 +1,15 @@
+{% extends "fourth_task/menu.html" %}
+
+{% block pagename %}
+  <h1>Готово к выдаче</h1>
+{% endblock %}
+
+{% block menu %}
+  {{ block.super }}
+{% endblock %}
+
+{% block content %}
+  <h2>Извините, загляните позднее</h2>
+  <p>Можете выбрать оз имеющегося <a href="/in_work">ОБОРУДОВАНИЯ</a></p>
+  <a href='/service'><button>Вернуться обратно</button></a>
+{% endblock %}
